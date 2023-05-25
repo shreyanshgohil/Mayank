@@ -1,0 +1,9 @@
+const userTypes = {
+  CREATE_USER: 'CREATE_USER',
+  ADD_USER_TODO: 'ADD_USER_TODO',
+  EDIT_USER_TODO: 'EDIT_USER_TODO',
+  DELETE_USER_TODO: 'DELETE_USER_TODO',
+  FETCH_USER_DATA: 'FETCH_USER_DATA',
+};
+
+export default userTypes;
