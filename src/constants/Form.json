@@ -46,5 +46,23 @@
             "errorMessage": "Please enter valid phone number",
             "defaultValue": ""
         }
+    ],
+    "todoFields":[
+        {
+            "title": "Title",
+            "id": "title",
+            "type": "text",
+            "name": "title",
+            "errorMessage": "Please enter valid title",
+            "defaultValue": ""
+        },
+         {
+            "title": "Description",
+            "id": "description",
+            "type": "text",
+            "name": "description",
+            "errorMessage": "Please enter valid description",
+            "defaultValue": ""
+        } 
     ]
 }

@@ -1,6 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import { Home, Login, Register } from './pages';
 import { Header } from './components/Global';
+import AddTodo from './pages/AddTodo';
+import EditTodo from './pages/EditTodo';
 
 const App = () => {
   return (
@@ -9,6 +11,8 @@ const App = () => {
         <Route index element={<Home />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
+        <Route path="add-todo" element={<AddTodo />} />
+        <Route path="edit-todo" element={<EditTodo />} />
       </Route>
     </Routes>
   );
