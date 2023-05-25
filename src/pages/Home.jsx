@@ -1,31 +1,18 @@
 import { useEffect, useState } from 'react';
-
+import users from '../constants/Users.json';
 // Homepage
 const Home = () => {
   // Inits
-  const [users, setUser] = useState([]);
-  // For fetch all users from database
-  const fetchAllUsers = async () => {
-    try {
-      const response = await fetch('http://localhost:5000/user/get-users');
-      const data = await response.json();
-      setUser(data.users);
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
-  useEffect(() => {
-    fetchAllUsers();
-  }, []);
-
+  const [users, setUser] = useState({});
+  const [todos, setTodos] = useState([]);
+  debugger;
   // JSX
   return (
     <div className="flex flex-col max-w-full">
       <div className="overflow-x-auto ">
         <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
           <div className="overflow-hidden">
-            {users.length > 0 ? (
+            {todos.length > 0 ? (
               <table className="min-w-full text-left text-sm font-light">
                 <thead className="border-b font-medium border-neutral-500">
                   <tr>
